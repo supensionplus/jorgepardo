@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta</title>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'>
+  <style>
+    
+    body { font-family: 'Inter', sans-serif; background: #f4f8ff; margin: 0 auto; padding: 20px; max-width: 800px; font-size: clamp(1.2rem, 4vw, 1.6rem); line-height: 1.4; }
+    textarea { width: 100%; height: 200px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-family: monospace; }
+    
+button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #0056b3;
+}
 
+    .portada { width: 90%; display: block; margin: 0 auto 10px; border-radius: 8px; }
+    .logo { width: 15%; max-width: 120px; min-width: 60px; height: auto; border-radius: 50%; display: block; margin: -50px auto 10px; border: 4px solid #fff; background: #fff; }
+    h2, h3, .descripcion, .ubicacion-line, .redes-line { text-align: center; }
+    
+    h2 { font-size: clamp(1.3rem, 5vw, 1.6rem); color: #4a90e2; margin: 8px 0; }
+    h3 { font-size: clamp(1.2rem, 4vw, 1.5rem); color: #555; margin: 6px 0; font-weight: 400; }
+    .descripcion { font-size: clamp(1.1rem, 4vw, 1.4rem); color: #333; font-weight: 400; margin: 6px 0; }
+
+    details { margin: 4px 0; border-radius: 6px; overflow: hidden; }
+    details summary { background: #007bff; color: #fff; padding: 15px; font-size: clamp(1.2rem, 3.5vw, 1.6rem); cursor: pointer; font-weight: 600; }
+
+    .contenido, p {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    }
+    .contacto, .qr, .firma, .descargar { text-align: center; margin: 20px 0; }
+    .redes-line { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 10px; }
+    .redes-line img { width: 48px; height: 48px; border-radius: 50%; cursor: pointer; transition: transform 0.2s; }
+    .redes-line img:hover { transform: scale(1.1); }
+    pre { background: #eee; padding: 15px; border-radius: 6px; white-space: pre-wrap; font-size: 1rem; display: none; height: auto; max-height: 10em; overflow: auto; }
+
+    .bloque {
+  background: white;
+  border: 1px solid #ddd; /* Borde sutil visible en fondos blancos */
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  max-width: 95%;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+.bloque:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-color: #ccc; /* Sutil cambio al pasar el mouse */
+}
+
+
+details[open] .contenido {
+  animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.galeria {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding: 10px;
+}
+.galeria img, .galeria iframe {
+  flex: 0 0 auto;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 10px;
+  scroll-snap-align: center;
+}
+.galeria::-webkit-scrollbar {
+  height: 8px;
+}
+.galeria::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+
+
+    
+    
+  
+    body { background: #d3e2fd; }
+    details summary {
+      background: #007bff;
+    }
+  </style>
+</head>
+<body>
+  
+  <div style="text-align:center; font-size:0.9rem; background:#e0f0ff; padding:8px 12px; border-radius:8px; margin-bottom:12px;">
+    <a href="https://wa.me/573117715353" target="_blank" style="color:#007bff; text-decoration:none; font-weight:500;">
+      📲 FolioPro – Tu marca y tu historia en un Portafolio Digital
+    </a>
+  </div>
+<img class="portada" src="https://tarjetasweb2-6838.kxcdn.com/archivos/5ed50926-6360-450f-873a-dc754e052886-medium.jpg" alt="Portada"><img class="logo" src="https://tarjetasweb2-6838.kxcdn.com/archivos/42e94887-bb1f-493d-a70a-1846c3314b83-icon.png" alt="Logo"><div class="bloque"><h2>Management Life Coach</h2></div><div class="bloque"><p class='descripcion' style="font-weight:600; text-align:center;">Entrenador en Gerencia de Vida</p></div><div class="bloque"><p style="text-align:center;">Master Coach certificado en procesos de Coaching de Vida, Ejecutivo y de Equipos.
+.
+Especialista en el diseño y estructuración de programas de liderazgo, coaching, desarrollo de habilidades, competencias y trabajo en equipo; para acompañar procesos individuales y colectivos en la formación de líderes y coaches profesionales.
+.
+En el siguiente menú podrá conocer detalles de mi perfil profesional y actividades realizadas
+Bienvenid@s</p></div><details><summary>ESTUDIOS REALIZADOS</summary><div class="contenido"><img src="https://tarjetasweb2-6838.kxcdn.com/archivos/2503886e-e8e6-4e34-ad87-8a32762e387f-medium.jpg" style="width:90%;display:block;margin:10px auto;"><p>Formación Profesional:</p><p></p><p>Universidad de Manizales</p><p>- Contaduría Pública </p><p></p><p>Universidad Santiago de Cali</p><p>- Especialización en Revisoría Fiscal y Auditoría</p><p></p><p>Universidad Cooperativa Internacional - UNICINTER</p><p>- Diplomado en Administración</p><p></p><img src="https://tarjetasweb2-6838.kxcdn.com/archivos/8bfa8270-2485-4f24-ad61-a9fab232a3fe-medium.jpg " style="width:90%;display:block;margin:10px auto;"><p>Future Achievement International - Sistema OPTIMIZARE</p><p>- Coach LMC - Management Life Coach</p><p>- Entrenador en Gerencia de Vida</p><p></p><p> </p><p>Interntational Coaching Leadership - ICL</p><p>- Certificación Internacional en Coaching y Liderazgo </p><p>- Líder Facilitador Profesional en Coaching - LFPC</p><p></p><p> </p><p>Instituto Internacional de Liderazgo - INILID</p><p>- Formación Profesional en Coaching Ejecutivo y de Equipos</p><img src="https://tarjetasweb2-6838.kxcdn.com/archivos/433eaf04-74c2-4d7c-88ab-ded151b8dce8-medium.jpg" style="width:90%;display:block;margin:10px auto;"></div></details><details><summary>EXPERIENCIA PROFESIONAL</summary><div class="contenido"></div></details><details><summary>PARTICIPACIÓN EN PROYECTOS</summary><div class="contenido"></div></details><details><summary>ESTRUCTURA MISIONAL</summary><div class="contenido"></div></details><details><summary>RESPALDO INSTITUCIONAL</summary><div class="contenido"></div></details><details><summary>OFERTA DE PROGRAMAS</summary><div class="contenido"></div></details><details><summary>TEST MODELOS DISC</summary><div class="contenido"></div></details><details><summary>+ INFORMACIÓN</summary><div class="contenido"><p></p><p></p><p></p><p>contacto</p></div></details><details><summary>SECCION 1</summary><div class="contenido"><img src="https://i.ibb.co/R20WVf3/Propied-03.jpg -------------------->> Imagen" style="width:90%;display:block;margin:10px auto;"><iframe width="90%" height="315" src="https://www.youtube.com/embed/GtEAHJTUFdc-------->> Video" frameborder="0" allowfullscreen style="display:block;margin:10px auto;"></iframe><p></p><p>Parrafo: lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum </p><p>lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum</p></div></details><details><summary>SECCION 1</summary><div class="contenido"><img src="https://i.ibb.co/R20WVf3/Propied-03.jpg -------------------->> Imagen" style="width:90%;display:block;margin:10px auto;"><iframe width="90%" height="315" src="https://www.youtube.com/embed/GtEAHJTUFdc-------->> Video" frameborder="0" allowfullscreen style="display:block;margin:10px auto;"></iframe><p></p><p>Parrafo: lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum </p><p>lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum</p></div></details><details><summary>SECCION 2</summary><div class="contenido"><img src="https://i.ibb.co/R20WVf3/Propied-03.jpg -------------------->> Imagen" style="width:90%;display:block;margin:10px auto;"><iframe width="90%" height="315" src="https://www.youtube.com/embed/GtEAHJTUFdc-------->> Video" frameborder="0" allowfullscreen style="display:block;margin:10px auto;"></iframe><p></p><p>Parrafo: lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum </p><p>lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum</p></div></details><details><summary>SECCION 3</summary><div class="contenido"><img src="https://i.ibb.co/R20WVf3/Propied-03.jpg -------------------->> Imagen" style="width:90%;display:block;margin:10px auto;"><iframe width="90%" height="315" src="https://www.youtube.com/embed/GtEAHJTUFdc-------->> Video" frameborder="0" allowfullscreen style="display:block;margin:10px auto;"></iframe><p></p><p>Parrafo: lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum </p><p>lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum lorem lupsulumlum </p><p></p><p></p><p>SECCIONES INFINITAS</p></div></details>
+      <div class="bloque">
+        <h3 style="text-align:center;">📷 Galería de Imágenes</h3>
+        <p style="text-align:center;">Desliza a la derecha o izquierda para ver todas las fotos</p>
+        <div class="galeria"><img src="https://i.ibb.co/1m91Wpk/ABOGADOS.jpg" alt="Imagen"><img src="https://i.ibb.co/ZzZQD6s/Diana-Gallego.jpg" alt="Imagen"><img src="https://i.ibb.co/94cpHyr/IMAGEN01.jpg" alt="Imagen"><img src="https://i.ibb.co/TM0ZGb1/IMAGEN02.jpg" alt="Imagen"><img src="https://i.ibb.co/zP3Fkwf/IMAGEN03.jpg" alt="Imagen"><img src="https://i.ibb.co/3mRd7Vg/Leticia.jpg" alt="Imagen"><img src="https://i.ibb.co/sFVg6y5/diana-grisales.jpg" alt="Imagen"></div>
+      </div>
+      <div class="bloque">
+        <h3 style="text-align:center;">🎥 Galería de Videos</h3>
+        <p style="text-align:center;">Desliza a la derecha o izquierda para ver todos los videos</p>
+        <div class="galeria"><iframe width="300" height="180" src="https://www.youtube.com/embed/J49HQqq3YQY" frameborder="0" allowfullscreen></iframe><iframe width="300" height="180" src="https://www.youtube.com/embed/pPfdwTDJ_wM" frameborder="0" allowfullscreen></iframe><iframe width="300" height="180" src="https://www.youtube.com/embed/QDnKLnwwCfM" frameborder="0" allowfullscreen></iframe></div>
+      </div>
+          <div class="bloque">
+            <div class="mapa" style="text-align:center;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.326881542194!2d-75.67485492592853!3d4.535035343073338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5ac17cb8e9d%3A0x69b73ef98c6fab4b!2sCl.%2017%20%23%2015-49%2C%20Armenia%2C%20Quind%C3%ADo!5e0!3m2!1ses-419!2sco!4v1748475508541!5m2!1ses-419!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div><div class="bloque"><div class="contacto ubicacion-line">
+          <div>📍Dir 1: Cra 17 No 15 49 Of 501</div><div>📍Dir 2: Diagonal al CAM , Alcaldia de Armenia</div><div>📍Barrio: Centro, Armenia, Quindio, Colombia</div><div>📱Tel1: +573117715353</div><div>📱Tel 2:+573022882785</div><div>✉️ Email: supensionplus@gmail.com</div>
+        </div></div><div class="redes-line"><a href="https://www.facebook.com/cesarcano.asesor/" target="_blank"><img src="https://i.ibb.co/6JJ5FZ1S/IFbook.png" alt="facebook" title="Facebook"></a><a href="https://www.instagram.com/supensionplus/" target="_blank"><img src="https://i.ibb.co/chCqtLkw/IInstagram.png" alt="instagram" title="Instagram"></a><a href="https://www.youtube.com/@cesarcano" target="_blank"><img src="https://i.ibb.co/VYxJpn7X/IYoutube.png" alt="youtube" title="Youtube"></a><a href="https://wa.me/573117715353" target="_blank"><img src="https://i.ibb.co/bgnHxP1y/IWapp.png" alt="whatsapp" title="Whatsapp"></a></div><div class="bloque"><div class="qr" style="text-align:center;">
+          <h3>Escanea para acceder</h3>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fsupensionplus.github.io%2Fwebcard%2Febook.html" alt="QR">
+        </div></div><div class="descargar">
+        <button onclick="descargarVCF()">📥 Descargar Contacto</button>
+      </div><div class="firma"><p>Desarrollado por <a href='https://wa.me/573117715353'>SupensionPlus</a></p></div>
+  <script>
+    function descargarVCF() {
+      const nombre = document.querySelector('h2')?.textContent || 'Contacto';
+      const descripcion = document.querySelector('.descripcion')?.textContent || '';
+      const telMatch = document.querySelector('.ubicacion-line')?.textContent.match(/\+?\d{7,}/);
+      const tel = telMatch ? telMatch[0] : '';
+      const emailMatch = document.querySelector('.ubicacion-line')?.textContent.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
+      const email = emailMatch ? emailMatch[0] : '';
+
+      const vcf = `BEGIN:VCARD
+VERSION:3.0
+FN:${nombre}
+ORG:${descripcion}
+TEL:${tel}
+EMAIL:${email}
+END:VCARD`;
+
+      const blob = new Blob([vcf], { type: 'text/vcard' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'contacto.vcf';
+      link.click();
+    }
+
+    document.querySelectorAll('details').forEach(d => {
+      d.addEventListener('toggle', function () {
+        if (this.open) {
+          document.querySelectorAll('details').forEach(o => {
+            if (o !== this) o.removeAttribute('open');
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
