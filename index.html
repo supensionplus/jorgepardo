@@ -106,9 +106,9 @@ details[open] .contenido {
 
 .titulo-flotante {
   position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  width: 100%;
   background: linear-gradient(145deg, #0d6efd, #0a58ca);
   color: white;
   font-family: 'Georgia', serif;
@@ -117,19 +117,37 @@ details[open] .contenido {
   padding: 14px 30px;
   text-align: center;
   z-index: 999;
-  border-radius: 50px;
+  border-radius: 0 0 20px 20px; /* redondeado solo abajo */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  max-width: 90%;
 }
 body {
   padding-top: 80px;
 }
 
-    
+
+  .folio-footer {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  z-index: 998;
+}
+.folio-footer a {
+  color: #001f4d; /* Azul oscuro visible */
+  text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
+  transition: color 0.3s;
+}
+.folio-footer a:hover {
+  color: white;
+}
+
     
   
-    body { background: #f4f8ff; }
+    body { background: #7af0a7; }
     details summary {
       background: #007bff;
     }
@@ -142,7 +160,11 @@ body {
       📲 FolioPro – Tu marca y tu historia en un Portafolio Digital
     </a>
   </div>
-<img class="portada" src="https://tarjetasweb2-6838.kxcdn.com/archivos/5ed50926-6360-450f-873a-dc754e052886-medium.jpg" alt="Portada"><img class="logo" src="https://tarjetasweb2-6838.kxcdn.com/archivos/42e94887-bb1f-493d-a70a-1846c3314b83-icon.png" alt="Logo"><div class="titulo-flotante">MANAGMENT LIFE COACH</div><div class="bloque"><p class='descripcion' style="font-weight:600; text-align:center;">Entrenador en Gerencia de Vida</p></div><div class="bloque"><p style="text-align:center;"><b>Master Coach certificado en procesos de Coaching de Vida, Ejecutivo y de Equipos.</b>
+<img class="portada" src="https://tarjetasweb2-6838.kxcdn.com/archivos/5ed50926-6360-450f-873a-dc754e052886-medium.jpg" alt="Portada"><img class="logo" src="https://tarjetasweb2-6838.kxcdn.com/archivos/42e94887-bb1f-493d-a70a-1846c3314b83-icon.png" alt="Logo"><div class="titulo-flotante">MANAGMENT LIFE COACH</div><div class="folio-footer">
+      <a href="https://wa.me/573117715353" target="_blank" title="Escríbenos a FolioPro">
+        By FolioPro
+      </a>
+    </div><div class="bloque"><p class='descripcion' style="font-weight:600; text-align:center;">Entrenador en Gerencia de Vida</p></div><div class="bloque"><p style="text-align:center;"><b>Master Coach certificado en procesos de Coaching de Vida, Ejecutivo y de Equipos.</b>
 <br>
 Especialista en el diseño y estructuración de programas de liderazgo, coaching, desarrollo de habilidades, competencias y trabajo en equipo; para acompañar procesos individuales y colectivos en la formación de líderes y coaches profesionales.
 .<br>
